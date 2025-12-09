@@ -1,0 +1,68 @@
+.body{
+    background:black;
+
+}
+.name{
+    background:burlywood;
+    border-radius: 10px;
+    border:90px;
+    padding:10px;
+    margin:10px;
+}
+.login{
+    align-items: center;
+    color:blueviolet;
+    justify-content: center;
+    display: flex;
+    place-items: center;
+    margin:10%;
+    border: 10%;
+    padding: 10%;
+    size:50px;
+    height: 50%;
+    width: 50%;
+    font-size: 20px;
+    background:pink;
+    border-radius: 50px;
+}
+
+/* .login{
+    margin: 0;
+    width:350 px;
+    padding: 20px;
+    background-color: pink;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+} */
+
+.email{
+    background:burlywood;
+    border-radius: 10px;
+    border:90px;
+    padding:10px;
+    margin:10px;
+
+}
+
+.password{
+    background:burlywood;
+    border-radius: 10px;
+    border:90px;
+    padding:10px;
+    margin:10px;
+
+}
+.submit{
+    background:burlywood;
+    border-radius: 10px;
+    border:10px;
+    padding:10px;
+    margin-left:30px;
+    margin-right: 50px;    
+
+}
+.reset{
+    margin-left: 50px;
+}

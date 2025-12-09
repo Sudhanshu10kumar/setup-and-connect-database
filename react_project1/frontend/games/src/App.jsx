@@ -1,15 +1,30 @@
-import Buttons from "./component/Buttons";
-import ProfileCard from "./component/profileCard";
-import Status from "./component/status";
+// import Login from "./component2/Login";
 
+// const App=()=>{
+//   return (
+//     <div>
+//       <Login/>
+//     </div>
+//   )
+// };
+// export default App;
 
-const App=()=>{
+import { useEffect, useState } from "react";
+
+function App() {
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    fetch("http://localhost:5000/api/message")
+      .then(res => res.json())
+      .then(data => setMessage(data.message));
+  }, []);
+
   return (
-    <dev>
-    <Buttons/>
-
-    </dev>
-  )
-};
+    <div>
+      <h1>{message}</h1>
+    </div>
+  );
+}
 
 export default App;
